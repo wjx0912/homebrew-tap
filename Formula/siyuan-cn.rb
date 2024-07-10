@@ -1,4 +1,4 @@
-cask "siyuan-cn" do
+class "siyuan-cn" < Formula
   version "2.004R"
   sha256 "2f317e15480608cabf471cbabdbc5f524066d0bbb177a3f439c7b5ee7b61780c"
 
