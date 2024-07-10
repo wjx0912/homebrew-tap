@@ -1,4 +1,4 @@
-cask "commonchinesefont" do
+cask "siyuan-cn" do
   arch arm: "arm64", intel: "x64"
   version "2.0.20"
   sha256 arm:   "35d1217f5431ed90bbaeda17fb6d6db3eff201fb79d02a3589fa5b7f0e66771f",
@@ -12,7 +12,7 @@ cask "commonchinesefont" do
 
   auto_updates true
 
-  name "commonchinesefont"
+  name "siyuan-cn"
   desc "Chinese fonts for Developers."
   homepage "https://www.google.com"
 
