@@ -1,22 +1,19 @@
 cask "siyuan-cn" do
-  arch arm: "arm64", intel: "x64"
-  version "2.0.20"
-  sha256 arm:   "35d1217f5431ed90bbaeda17fb6d6db3eff201fb79d02a3589fa5b7f0e66771f",
-         intel: "dd9bd9b8fafd6c84831bb2447266a97b06e91d4383d939de72fb3a7b44dd96fb"
-          
-  url "https://www.google.com/"
-  
-  livecheck do
-    url :url
-  end
+  version "2.004R"
+  sha256 "2f317e15480608cabf471cbabdbc5f524066d0bbb177a3f439c7b5ee7b61780c"
 
-  auto_updates true
+  url "https://github.com/adobe-fonts/source-han-sans/releases/download/{version}/SourceHanSansSC.zip"
+  name "思源黑体"
+  name "siyuan font (chinese)"
+  homepage "https://github.com/adobe-fonts/source-han-sans"
 
-  name "siyuan-cn"
-  desc "Chinese fonts for Developers."
-  homepage "https://www.google.com"
+  font "OTF/SimplifiedChinese/SourceHanSansSC-Bold.otf"
+  font "OTF/SimplifiedChinese/SourceHanSansSC-ExtraLight.otf"
+  font "OTF/SimplifiedChinese/SourceHanSansSC-Heavy.otf"
+  font "OTF/SimplifiedChinese/SourceHanSansSC-Light.otf"
+  font "OTF/SimplifiedChinese/SourceHanSansSC-Medium.otf"
+  font "OTF/SimplifiedChinese/SourceHanSansSC-Normal.otf"
+  font "OTF/SimplifiedChinese/SourceHanSansSC-Regular.otf"
 
-  depends_on macos: ">= :catalina"
-
-  #app "commonchinesefont.app"
+  # No zap stanza required
 end
